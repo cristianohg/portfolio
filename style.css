@@ -356,6 +356,19 @@ section {
   padding: 14px 36px;
 }
 
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+  border: 2px solid #25D366;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  border-color: #1ebe5d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+}
+
 /* Footer */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
