@@ -146,10 +146,11 @@ nav {
   color: var(--toggle-color);
   font-size: 1.2rem;
   cursor: pointer;
-  padding: 4px;
+  padding: 10px;
   transition: color 0.3s;
   display: flex;
   align-items: center;
+  touch-action: manipulation;
 }
 
 .theme-toggle:hover {
@@ -163,6 +164,8 @@ nav {
   color: var(--toggle-color);
   font-size: 1.4rem;
   cursor: pointer;
+  padding: 10px;
+  touch-action: manipulation;
 }
 
 /* Hero */

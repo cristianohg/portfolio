@@ -3,7 +3,8 @@ const navLinks = document.getElementById('navLinks');
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = themeToggle.querySelector('i');
 
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
 document.documentElement.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
 
